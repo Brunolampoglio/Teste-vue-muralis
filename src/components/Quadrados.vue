@@ -26,8 +26,7 @@ export default {
     flex-direction: row;
     width: 100%;
     margin-top: 1rem;
-    justify-content: center;
-    background-color: #c8d6f6;
+    gap:60px;
 }
 
 .bluebox{
@@ -38,17 +37,16 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
 }
 
 .inscritos{
   flex-direction: column;
-  background-color: #ffffff;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-  border: 1px solid #000000;
-  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  width: 220px;
   height: 150px;
-  margin-left: 5rem;
+  margin-right: 2rem;
+  background-color:rgb(255, 255, 255) ;
 }
 
 .textQuadrados{

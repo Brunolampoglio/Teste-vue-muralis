@@ -1,7 +1,7 @@
 <template>
 
     <div class="containerHeader">
-        <h1 class="title">Controle Geral</h1>
+        <h1 class="title">CONTROLE GERAL</h1>
         <Menu size="40"/>
     </div>
 
@@ -24,7 +24,7 @@ components: {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 97.5%;
   background-color: #c8d6f6;
 }
 

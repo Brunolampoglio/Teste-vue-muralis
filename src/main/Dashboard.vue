@@ -4,6 +4,7 @@
       <div  class="itensDashboard">
         <Header/>
         <Quadrados/>
+        <BarChart/>
       </div> 
         <router-view/>
       </div>
@@ -15,12 +16,14 @@
 import NavigationBarVue from '../components/NavigationBar.vue'
 import Header from '../components/Header.vue'
 import Quadrados from '@/components/Quadrados.vue';
+import BarChart from  '../components/Dashboard.vue'
 export default {
     name: 'DashboardHome',
     components: {
     NavigationBarVue,
     Header,
-    Quadrados
+    Quadrados,
+    BarChart
 
 
   }
@@ -33,7 +36,7 @@ export default {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
+  height: 100vh;
     background-color: #c8d6f6;
 }
 .itensDashboardHeader{
