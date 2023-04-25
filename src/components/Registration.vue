@@ -88,8 +88,9 @@ export default {
 
   setup() {
     const notify = () => {
-      toast("Salvo com Sucesso !", {
+      toast.info("Salvo com Sucesso !", {
         autoClose: 1000,
+        theme: 'colored',
       }); // ToastOptions
     }
     return { notify };
