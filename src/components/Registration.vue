@@ -32,13 +32,15 @@
 
     <div class="buttons">
       <button class="buttonIngreYellow" >Voltar</button>
-      <button type='submit' class="buttonIngreGreen" v-on:click="greet">Gravar</button>
+      <button type='submit' class="buttonIngreGreen" v-on:click="notify">Gravar</button>
       </div>
     </div>  
    </div>
 </template>
 
 <script Long="scss" scoped>
+import { toast } from 'vue3-toastify';
+import 'vue3-toastify/dist/index.css';
 
 
 export default {
@@ -84,11 +86,13 @@ export default {
     }
   },
 
-    methods: {
-      greet: function () {
-
-        alert('Salvo com sucesso!')
+  setup() {
+    const notify = () => {
+      toast("Salvo com Sucesso !", {
+        autoClose: 1000,
+      }); // ToastOptions
     }
+    return { notify };
   }
 }
 </script>
